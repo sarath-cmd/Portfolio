@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarath's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9bc08b0e45.js" crossorigin="anonymous"></script>
+</head>
+<body class="p-5 md:p-10">
+    <section class="bg-purple-300 p-5 rounded-2xl">
+        <div class="flex">
+            <h1 class="font-bold sm:pl-10 border-r-2 pr-5 border-white text-2xl">Portfolio</h1>
+            <div class="my-auto flex">
+                <button onclick="menuClick()">
+                    <i class="pl-5 pt-1 fa-solid fa-bars md:hidden"></i>
+                </button>
+                <ul class="hidden md:flex mx-2">
+                    <li class="mx-2 font-medium"><a href="#">Home</a></li>
+                    <li class="mx-2 font-medium"><a href="#abo">About</a></li>
+                    <li class="mx-2 font-medium"><a href="#edu">Education</a></li>
+                    <li class="mx-2 font-medium"><a href="#pro">Project</a></li>
+                    <li class="mx-2 font-medium"><a href="#con">Contact</a></li>
+                </ul>
+            </div>
+            <a href="./asset/SarathResume.pdf" download class="ml-auto">
+                <button class="bg-red-500 p-2 text-white rounded-lg  flex">
+                    <span class="hidden mr-1 lg:flex">Download Resume</span>
+                    <i class="pt-1 fa-solid fa-download fa-bounce"></i>
+                </button>
+            </a>
+        </div>        
+
+        <div id="mobileMenu" class="hidden">
+            <ul class="md:hidden ml-10 mt-4">
+                <li class="font-medium mt-2"><a href="#">Home</a></li>
+                <li class="font-medium mt-2"><a href="#abo">About</a></li>
+                <li class="font-medium mt-2"><a href="#edu">Education</a></li>
+                <li class="font-medium mt-2"><a href="#pro">Project</a></li>
+                <li class="font-medium mt-2"><a href="#con">Contact</a></li>
+            </ul>
+        </div>
+
+        <img src="./asset/sarath1.jpg" class="sm:hidden flex mx-auto h-56 rounded-lg mt-10">
+        <div class="flex md:h-[500px] 2xl:h-[600px]">
+            <div class="sm:w-1/2 md:h-1/2">
+                <span class="flex justify-center mt-8 text-4xl font-bold sm:justify-start md:mt-28 md:text-5xl md:ml-5 lg:ml-10 lg:mt-28 xl:ml-20 xl:text-7xl 2xl:mt-36 2xl:text-8xl">Hello,</span>
+                <span class="flex justify-center text-2xl font-bold sm:justify-start md:text-3xl md:ml-5 lg:ml-10 xl:ml-20 xl:text-5xl 2xl:text-6xl">I'm Sarath</span>
+                <span class="flex justify-center text-xl sm:justify-start md:text-xl md:ml-5 lg:ml-10 xl:ml-20 xl:text-3xl 2xl:text-4xl">Frontend Developer</span><br>
+                <p class="text-opacity-60 p-10 sm:justify-start sm:p-0 text-black md:p-0 md:ml-5 lg:ml-10 xl:ml-20 xl:text-sm 2xl:-text-lg">
+                    Front-End Developer with a passion for crafting user-friendly web experience.
+                    Proficient in HTML, CSS, and responsive design principles, ensuring seamless experiences across all devices.
+                    Dedicated to delivering high-quality, accessible, and performant web interfaces that engage and delight users.
+                </p><br>
+            </div><br>
+            <div class="flex">
+                <img class="hidden mt-10 sm:justify-end sm:flex lg:ml-20 xl:ml-28" src="./asset/sarath.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-purple-300 p-5 mt-12 rounded-2xl" id="abo">
+        <div class="flex justify-center font-bold text-4xl">
+            About Me
+        </div>
+        <div class="p-5 sm:text-lg">
+            <p>
+                I'm <b>Sarath</b>, a resident of Udumalpet, my educational journey began at <b>Amrita Vidyalayam</b>,
+                 where I completed my <b>10th grade</b>. Continuing my<b> high school</b> studies at <b>Srinivasa Vidhyalaya</b>
+                  and I am currently enrolled in the Bachelor of Engineering program, specializing in
+                  <b>Computer Science and Engineering</b> at <b>Raathinam Technical Campus</b>.
+            </p><br>
+            <p>
+                In the vast realm of technology, I identify as a front-end developer, using <b>HTML</b> and <b>CSS</b> to craft
+                 visually appealing and responsive user interfaces. The world of web development serves as my
+                  creative outlet, allowing me to transform code into captivating digital experiences.
+            </p><br>
+            <p>
+                My skill set extends beyond the basics; I also use <b>Tailwind CSS</b>, a utility-first CSS framework,
+                 showcasing not only my adaptability but also my dedication to staying current with the latest
+                  tools and technologies. and I am currently <b>learning JavaScript</b> —a programming language for a
+                   dynamic and interactive web applications.
+            </p>
+        </div>
+        <div class="flex justify-center font-bold text-4xl sm:justify-start sm:ml-5">
+            My Skills
+        </div>
+
+        <div class="mt-5 sm:grid sm:grid-cols-2 xl:grid-cols-3">
+
+            <div class="mr-3">
+                <span class="ml-20 sm:ml-5 lg:ml-14">
+                    <i class="text-5xl bg-red-500 text-white px-3 pt-2 pb-1 rounded-full fa-brands fa-html5"></i>
+                </span>
+                <div class="mt-2">
+                    <span class="flex p-5 pt-0 lg:ml-10">
+                        HTML (Hypertext Markup Language), adept at structuring and presenting content on the web. 
+                        Skilled in utilizing tags to create responsive and accessible frontend designs.
+                    </span>
+                </div>
+            </div>
+
+            <div class="mr-3">
+                <span class="ml-20 sm:ml-5 lg:ml-14">
+                    <i class="text-5xl bg-red-500 text-white px-3 pt-2 pb-1 rounded-full fa-brands fa-css3-alt"></i>
+                </span>
+                <div class="mt-2">
+                    <span class="flex p-5 pt-0 lg:ml-10">
+                        CSS (Cascading Style Sheets), with a keen eye for design and layout. 
+                        Proficient in applying styles, ensuring visually appealing and responsive user interfaces for seamless 
+                        frontend development.
+                    </span>
+                </div>
+            </div>
+            
+            <div class="mr-3">
+                <span class="ml-20 sm:ml-5 lg:ml-14">
+                    <i class="text-2xl bg-red-500 text-white px-5 py-3 rounded-full fa-brands fa-js"></i>
+                </span>
+                <div class="mt-2">
+                    <span class="flex p-5 pt-0 lg:ml-10">
+                        Skilled in JavaScript, proficiently enhancing frontend interactivity and functionality. 
+                        Experienced in leveraging frameworks and libraries to create dynamic, user-friendly web 
+                        applications.
+                    </span>
+                </div>
+            </div>
+
+            <div class="mr-3">
+                <span class="flex ml-20 sm:ml-5 lg:ml-14">
+                    <img class="text-5xl h-[50px] bg-red-500 text-white px-3 py-4 rounded-full sm:w-1/6 sm:h1/4" src="./asset/tailwind.png">
+                </span>
+                <div class="mt-2">
+                    <span class="flex p-5 pt-0 lg:ml-10">
+                        Tailwind CSS, utilizing utility-first methodology for efficient and scalable styling. 
+                        Experienced in rapidly building responsive and modern user interfaces, optimizing development 
+                        workflow.
+                    </span>
+                </div>
+            </div>
+
+            <div class="mr-3">
+                <span class="flex ml-20 sm:ml-5 lg:ml-14">
+                    <img class="text-5xl h-[50px] bg-red-500 text-white px-3 py-2 rounded-full sm:w-1/6 sm:h1/4" src="./asset/photoshop.png">
+                </span>
+                <div class="mt-2">
+                    <span class="flex p-5 pt-0 lg:ml-10">
+                        Basic Photoshop proficiency for image editing and graphic design. 
+                        Able to perform essential tasks such as cropping, resizing, and color adjustments for various 
+                        design needs.
+                    </span>
+                </div>
+            </div>
+
+            <div class="mr-3">
+                <span class="flex ml-20 sm:ml-5 lg:ml-14">
+                    <img class="text-5xl h-[50px] bg-red-500 text-white px-3 py-2 rounded-full sm:w-1/6 sm:h1/4" src="./asset/davinci resolve.png">
+                </span>
+                <div class="mt-2">
+                    <span class="flex p-5 pt-0 lg:ml-10">
+                        proficiency in DaVinci Resolve for video editing. Capable of cutting, trimming, and enhancing 
+                        videos. Familiar with color grading and basic audio editing for creating polished visual content.
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="bg-purple-300 p-5 mt-10 rounded-2xl" id="edu">
+        <div class="flex justify-center font-bold text-4xl">
+            My Education
+        </div>
+
+        <div class="grid sm:grid sm:grid-cols-2 xl:grid-cols-3">
+            <div class="group mt-5 ml-7 ">
+                    <h1 class="font-bold text-2xl">Rathinam Technical Campus</h1>
+                <div class="group-hover:bg-purple-400 p-5 rounded-2xl group-hover:shadow-md group-hover:shadow-black">
+                    <img src="./asset/rathinam.jpg" class="w-full h-[338px] rounded-xl opacity-50 group-hover:opacity-100"><br>
+                    <Span class="opacity-30 group-hover:opacity-100">
+                        <b class="opacity-80">COLLEGE:</b> RATHINAM TECHNICAL CAMPUS<br>
+                        <b class="opacity-70">PLACE:</b> COIMBATORE<br>
+                        <b class="opacity-70">DEGREE:</b> B.E<br>
+                        <b class="opacity-70">DEPARTMENT:</b> COMPUTER SCIENCE AND ENGINEERING<br>
+                        <b class="opacity-70">YEARS:</b> 4 YEARS<br>
+                        <b class="opacity-70">GPA:</b> 7.6<br>
+                        <b class="opacity-70">JOINING YEAR:</b> 2020<br>
+                        <b class="opacity-70">PASSOUT YEAR:</b> 2024<br>
+                        <button onclick="location.href='https://www.rathinamcollege.edu.in/engineering/'" class="flex font-bold mt-5 p-3 rounded-lg bg-red-600 text-white">
+                            VISIT COLLEGE WEBSITE<i class="group-hover:block hidden my-auto ml-2 fa-solid fa-right-long fa-beat"></i>
+                        </button>
+                    </Span>
+                </div>
+            </div>
+
+            <div class="group mt-5 ml-7 ">
+                    <h1 class="font-bold text-2xl">SRINIVASA VIDHYALAYA</h1>
+                <div class="group-hover:bg-purple-400 p-5 rounded-2xl group-hover:shadow-md group-hover:shadow-black">
+                    <img src="./asset/srinivasa logo.jpeg" class="w-full h-[338px] rounded-xl opacity-50 group-hover:opacity-100"><br>
+                    <Span class="opacity-30 group-hover:opacity-100">
+                        <b class="opacity-80">SCHOOL:</b> SRINIVASA VIDHYALAYA<br>
+                        <b class="opacity-70">PLACE:</b> UDUMALPET<br>
+                        <b class="opacity-70">COURSE:</b> +1,+2<br>
+                        <b class="opacity-70">DEPARTMENT:</b> COMPUTER SCIENCE AND MATHS<br>
+                        <b class="opacity-70">MEDIUM:</b> ENGLISH<br>
+                        <b class="opacity-70">BOARD:</b> STATE BOARD<br>
+                        <b class="opacity-70">PERCENTAGE:</b> 63%<br>
+                        <b class="opacity-70">JOINING YEAR:</b> 2018<br>
+                        <b class="opacity-70">PASSOUT YEAR:</b> 2020<br>
+                        <button onclick="location.href='https://www.srinivasavidhyalaya.org/'" class="flex font-bold mt-5 p-3 rounded-lg bg-red-600 text-white"> 
+                            VISIT SCHOOL PAGE<i class="group-hover:block hidden my-auto ml-2 fa-solid fa-right-long fa-beat"></i>
+                        </button>
+                    </Span>
+                </div>
+            </div>
+
+            <div class="group mt-5 ml-7 ">
+                <h1 class="font-bold text-2xl">SRINIVASA VIDHYALAYA</h1>
+                <div class="group-hover:bg-purple-400 p-5 rounded-2xl group-hover:shadow-md group-hover:shadow-black">
+                    <img src="./asset/amrita logo.jpg" class="w-full h-[338px] rounded-xl opacity-50 group-hover:opacity-100"><br>
+                    <Span class="opacity-30 group-hover:opacity-100">
+                        <b class="opacity-80">SCHOOL:</b> Amrita Vidyalayam<br>
+                        <b class="opacity-70">PLACE:</b> ETTIMADAI<br>
+                        <b class="opacity-70">COURSE:</b> 10th<br>
+                        <b class="opacity-70">MEDIUM:</b> ENGLISH<br>
+                        <b class="opacity-70">BOARD:</b> CBSE<br>
+                        <b class="opacity-70">PERCENTAGE:</b> 65.8%<br>
+                        <b class="opacity-70">EDUCATION TYPE:</b> HOLISTIC EDUCATION<br>
+                        <b class="opacity-70">JOINING YEAR:</b> 2006<br>
+                        <b class="opacity-70">PASSOUT YEAR:</b> 2018<br>
+                        <button onclick="location.href='http://ettimadai.amritavidyalayam.org/'" class="flex font-bold mt-5 p-3 rounded-lg bg-red-600 text-white"> 
+                            VISIT SCHOOL PAGE<i class="group-hover:block hidden my-auto ml-2 fa-solid fa-right-long fa-beat"></i>
+                        </button>
+                    </Span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-purple-300 p-5 mt-10 rounded-2xl" id="pro">
+        <h1 class="flex justify-center font-bold text-4xl">MY PROJECTS</h1>
+        <h2 class="flex justify-center font-semibold text-xl">Click On The Image To View The Web Page</h2>
+        <div class="grid sm:grid sm:grid-cols-2 xl:grid-cols-3">
+            <div class="m-5">
+                <a href="https://sarath-cmd.github.io/evolvex-webpage/">
+                    <img src="./asset/Evolve-X.png" class="w-full rounded-xl">
+                </a>
+                <h3 class="flex justify-center font-medium text-xl">EvolveX Web Page</h3>
+                <p class="p-2">
+                    This EvolveX webpage serves as a functional model for various brands. 
+                    I built this page using an imaginary car brand as a template. 
+                    Users can navigate across multiple pages and access details seamlessly.
+                </p>
+            </div>
+
+            <div class="m-5">
+                <a href="https://sarath-cmd.github.io/NovaPad/">
+                    <img src="./asset/NovaPad.png" calss="h-[1000px] rounded-xl">
+                </a>
+                <h3 class="flex justify-center font-medium text-xl">Nova Pad Landing Page</h3>
+                <p class="p-2">
+                    The NovaPad is more specific than the EvolveX webpage, focusing on a particular model. 
+                    It is built around an imaginary brand. Navigating through it mainly emphasizes a specific model 
+                    within that brand.
+                </p>
+            </div>
+
+            <div class="m-5">
+                <a href="https://sarath-cmd.github.io/Portfolio-Dark-Theme/">
+                    <img src="./asset/portfolio-darktheme.png" calss="h-[1000px] rounded-xl">
+                </a>
+                <h3 class="flex justify-center font-medium text-xl">Portfolio Dark theme</h3>
+                <p class="p-2">
+                    This is my portfolio, exclusively designed in dark theme mode. 
+                    It contains comprehensive information and is entirely built using HTML and CSS. 
+                    The portfolio is hosted on GitHub.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-purple-300 p-5 mt-10 rounded-2xl" id="con">
+        <h1 class="flex justify-center font-bold text-4xl">CONTACT ME</h1>
+        <h2 class="flex justify-center font-semibold text-xl">
+            For a better communication please click on the Email-ID above the linkedin link
+        </h2>
+        <div class="grid sm:grid sm:grid-cols-2">
+            <div class="ml-0 sm:ml-10">
+                <form action="mailto:solansarath5@gmail.com" method="get" enctype="text/plain">
+                    <h4 class="font-semibold text-2xl">Name:</h4>
+                    <input type="text" name="subject" placeholder="Your Name" required class="w-3/4 sm:w-full mt-1 rounded-full h-[35px] pl-2">
+                    <h4 class="font-semibold text-2xl">Email:</h4>
+                    <input type="email" name="email" placeholder="Your Email" required class="w-3/4 sm:w-full mt-1 rounded-full h-[35px] pl-2">
+                    <h4 class="font-semibold text-2xl">Message:</h4> 
+                    <textarea name="body" placeholder="Your Message" required class="w-3/4 sm:w-full mt-1 rounded-2xl h-[100px] pl-2 resize-none"></textarea>
+                    <input type="submit" value="Send" class=" ml-5 font-bold w-1/4 mt-5 h-[50px] my-auto p-1 rounded-full bg-red-500 text-white">
+                </form> 
+            </div>
+
+            <div class="ml-0 sm:ml-10">
+                <i class="fa-brands fa-github mt-7 text-2xl"></i>
+                <a href="https://github.com/sarath-cmd" class="mt-5 text-2xl xl:text-3xl">
+                    github.com/sarath-cmd
+                </a><br>
+                <i class="fa-solid fa-envelope-open-text mt-7 text-2xl"></i>
+                <a href="mailto:solansarath5@gmail.com" class="mt-7 text-2xl xl:text-3xl">
+                    solansarath5@gmail.com
+                </a><br>
+                <i class="fa-brands fa-linkedin mt-7 text-2xl"></i>
+                <a href="https://www.linkedin.com/in/sarath-s-68266a273" class="mt-7 text-2xl xl:text-3xl">
+                    linkedin
+                </a><br><br>
+                <a href="SarathResume.pdf" download class="mt-10 ml-5 bg-red-500 text-white p-4 rounded-3xl lg:ml-20 xl:text-3xl 2xl:ml-56">
+                    Download Resume
+                    <i class="fa-solid fa-download fa-bounce mt-7 text-x2l"></i>
+                </a><br><br>
+                <p class="font-bold text-2xl ml-14 lg:ml-28 2xl:ml-64 xl:text-3xl">Thank You</p>
+                <a href="#" class="flex justify-end">
+                    <button>
+                        <abbr title="Scroll to Top">
+                            <i class="fa-solid fa-up-long fa-bounce text-3xl bg-red-500 text-white py-4 px-3 rounded-xl"></i>
+                        </abbr>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
