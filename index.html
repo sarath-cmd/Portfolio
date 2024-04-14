@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarath's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/9bc08b0e45.js" crossorigin="anonymous"></script>
 </head>
-<body class="p-5 md:p-10">
+<body class="p-5 md:p-10 select-none cursor-pointer">
     <section class="bg-purple-300 p-5 rounded-2xl">
         <div class="flex">
-            <h1 class="font-bold sm:pl-10 border-r-2 pr-5 border-white text-2xl">Portfolio</h1>
+            <h1 class="font-bold sm:pl-10 border-r-2 pr-5 border-black text-2xl">Portfolio</h1>
             <div class="my-auto flex">
                 <button onclick="menuClick()">
-                    <i class="pl-5 pt-1 fa-solid fa-bars md:hidden"></i>
+                    <i class="text-xl pl-5 pt-1 fa-solid fa-bars md:hidden"></i>
                 </button>
                 <ul class="hidden md:flex mx-2">
                     <li class="mx-2 font-medium"><a href="#">Home</a></li>
                     <li class="mx-2 font-medium"><a href="#abo">About</a></li>
-                    <li class="mx-2 font-medium"><a href="#edu">Education</a></li>
                     <li class="mx-2 font-medium"><a href="#pro">Project</a></li>
+                    <li class="mx-2 font-medium"><a href="#edu">Education</a></li>
                     <li class="mx-2 font-medium"><a href="#con">Contact</a></li>
                 </ul>
             </div>
@@ -35,8 +36,8 @@
             <ul class="md:hidden ml-10 mt-4">
                 <li class="font-medium mt-2"><a href="#">Home</a></li>
                 <li class="font-medium mt-2"><a href="#abo">About</a></li>
-                <li class="font-medium mt-2"><a href="#edu">Education</a></li>
                 <li class="font-medium mt-2"><a href="#pro">Project</a></li>
+                <li class="font-medium mt-2"><a href="#edu">Education</a></li>
                 <li class="font-medium mt-2"><a href="#con">Contact</a></li>
             </ul>
         </div>
@@ -49,7 +50,7 @@
                 <span class="flex justify-center text-xl sm:justify-start md:text-xl md:ml-5 lg:ml-10 xl:ml-20 xl:text-3xl 2xl:text-4xl">Frontend Developer</span><br>
                 <p class="text-opacity-60 p-10 sm:justify-start sm:p-0 text-black md:p-0 md:ml-5 lg:ml-10 xl:ml-20 xl:text-sm 2xl:-text-lg">
                     Front-End Developer with a passion for crafting user-friendly web experience.
-                    Proficient in HTML, CSS, and responsive design principles, ensuring seamless experiences across all devices.
+                    Proficient in HTML, CSS, React and TailwindCSS responsive design principles, ensuring seamless experiences across all devices.
                     Dedicated to delivering high-quality, accessible, and performant web interfaces that engage and delight users.
                 </p><br>
             </div><br>
@@ -65,21 +66,17 @@
         </div>
         <div class="p-5 sm:text-lg">
             <p>
-                I'm <b>Sarath</b>, a resident of Udumalpet, my educational journey began at <b>Amrita Vidyalayam</b>,
-                 where I completed my <b>10th grade</b>. Continuing my<b> high school</b> studies at <b>Srinivasa Vidhyalaya</b>
-                  and I am currently enrolled in the Bachelor of Engineering program, specializing in
-                  <b>Computer Science and Engineering</b> at <b>Raathinam Technical Campus</b>.
+                Hi, I'm <b>Sarath</b>, a resident of Udumalpet. I have completed my Bachelor of Engineering program, specializing in
+                <b>Computer Science and Engineering</b> at <b>Rathinam Technical Campus</b>.
+            </p><br>
+            <p> 
+                I am a passionate frontend developer with expertise in <b>HTML</b>, <b>CSS</b>, <b>Tailwind CSS</b>, <b>JavaScript</b> and <b>React</b>. 
+                My journey in the world of coding has led me to <b>specialize in React</b>, where I create dynamic and interactive user interfaces. 
+                Currently, I am <b>expanding my skill set</b> by delving into <b>backend technologies</b> to further enhance my capabilities.
             </p><br>
             <p>
-                In the vast realm of technology, I identify as a front-end developer, using <b>HTML</b> and <b>CSS</b> to craft
-                 visually appealing and responsive user interfaces. The world of web development serves as my
-                  creative outlet, allowing me to transform code into captivating digital experiences.
-            </p><br>
-            <p>
-                My skill set extends beyond the basics; I also use <b>Tailwind CSS</b>, a utility-first CSS framework,
-                 showcasing not only my adaptability but also my dedication to staying current with the latest
-                  tools and technologies. and I am currently <b>learning JavaScript</b> —a programming language for a
-                   dynamic and interactive web applications.
+                I thrive on challenges and am constantly seeking to learn and grow in this ever-evolving field. 
+                With a keen eye for design and a solid foundation in frontend development, I am excited to explore the realm of backend technologies to broaden my horizons and take my projects to the next level.
             </p>
         </div>
         <div class="flex justify-center font-bold text-4xl sm:justify-start sm:ml-5">
@@ -89,7 +86,7 @@
         <div class="mt-5 sm:grid sm:grid-cols-2 xl:grid-cols-3">
 
             <div class="mr-3">
-                <span class="ml-20 sm:ml-5 lg:ml-14">
+                <span class="flex justify-center md:justify-start sm:ml-5 lg:ml-14">
                     <i class="text-5xl bg-red-500 text-white px-3 pt-2 pb-1 rounded-full fa-brands fa-html5"></i>
                 </span>
                 <div class="mt-2">
@@ -101,7 +98,7 @@
             </div>
 
             <div class="mr-3">
-                <span class="ml-20 sm:ml-5 lg:ml-14">
+                <span class="flex justify-center md:justify-start sm:ml-5 lg:ml-14">
                     <i class="text-5xl bg-red-500 text-white px-3 pt-2 pb-1 rounded-full fa-brands fa-css3-alt"></i>
                 </span>
                 <div class="mt-2">
@@ -114,21 +111,8 @@
             </div>
             
             <div class="mr-3">
-                <span class="ml-20 sm:ml-5 lg:ml-14">
-                    <i class="text-2xl bg-red-500 text-white px-5 py-3 rounded-full fa-brands fa-js"></i>
-                </span>
-                <div class="mt-2">
-                    <span class="flex p-5 pt-0 lg:ml-10">
-                        Skilled in JavaScript, proficiently enhancing frontend interactivity and functionality. 
-                        Experienced in leveraging frameworks and libraries to create dynamic, user-friendly web 
-                        applications.
-                    </span>
-                </div>
-            </div>
-
-            <div class="mr-3">
-                <span class="flex ml-20 sm:ml-5 lg:ml-14">
-                    <img class="text-5xl h-[50px] bg-red-500 text-white px-3 py-4 rounded-full sm:w-1/6 sm:h1/4" src="./asset/tailwind.png">
+                <span class="flex flex justify-center md:justify-start sm:ml-5 lg:ml-14">
+                    <img class="text-5xl h-[50px] bg-red-500 px-3 py-4 rounded-full sm:w-1/6" src="./asset/tailwind.png">
                 </span>
                 <div class="mt-2">
                     <span class="flex p-5 pt-0 lg:ml-10">
@@ -140,7 +124,29 @@
             </div>
 
             <div class="mr-3">
-                <span class="flex ml-20 sm:ml-5 lg:ml-14">
+                <span class="flex justify-center md:justify-start sm:ml-5 lg:ml-14">
+                    <i class="text-2xl bg-red-500 text-white px-5 py-3 rounded-full fa-brands fa-js"></i>
+                </span>
+                <div class="mt-2">
+                    <span class="flex p-5 pt-0 lg:ml-10">
+                        Familiarity with DOM manipulation, laying the foundation for further JavaScript exploration and mastery
+                    </span>
+                </div>
+            </div>
+
+            <div class="mr-3">
+                <span class="flex justify-center md:justify-start sm:ml-5 lg:ml-14">
+                    <i class="text-5xl bg-red-500 text-white px-3 pt-2 pb-1 rounded-full fa-brands fa-react" style="color: #ffffff;"></i>
+                </span>
+                <div class="mt-2">
+                    <span class="flex p-5 pt-0 lg:ml-10">
+                        Proficiency in React, enabling development of dynamic and interactive user interfaces with reusable components.
+                    </span>
+                </div>
+            </div>
+
+            <div class="mr-3">
+                <span class="flex flex justify-center md:justify-start sm:ml-5 lg:ml-14">
                     <img class="text-5xl h-[50px] bg-red-500 text-white px-3 py-2 rounded-full sm:w-1/6 sm:h1/4" src="./asset/photoshop.png">
                 </span>
                 <div class="mt-2">
@@ -153,7 +159,7 @@
             </div>
 
             <div class="mr-3">
-                <span class="flex ml-20 sm:ml-5 lg:ml-14">
+                <span class="flex  justify-center md:justify-start sm:ml-5 lg:ml-14">
                     <img class="text-5xl h-[50px] bg-red-500 text-white px-3 py-2 rounded-full sm:w-1/6 sm:h1/4" src="./asset/davinci resolve.png">
                 </span>
                 <div class="mt-2">
@@ -164,18 +170,105 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
+    <section class="bg-purple-300 p-5 mt-10 rounded-2xl" id="pro">
+        <h1 class="flex justify-center font-bold text-4xl">MY PROJECTS</h1>
+        <h2 class="flex justify-center font-semibold text-xl">Click On The Image To View The Web Page</h2>
+
+        <div class="grid sm:grid sm:grid-cols-2 xl:grid-cols-3">
+
+            <div class="m-5">
+                <a href="https://sarath-cmd.github.io/Stopwatch-using-react/">
+                    <img src="./asset/stopwatch.png" class="h-[30vh] rounded-xl">
+                </a>
+                <h3 class="flex justify-center font-medium text-xl">Stopwatch</h3>
+                <p class="p-2">
+                    This stopwatch was build using React. 
+                    This stop watch has buttons to start, stop and reset the stopwatch.
+                    This stopwatch is capable of displaying the time in the format HH:MM:SS.
+                </p>
+            </div>
+
+            <div class="m-5">
+                <a href="https://sarath-cmd.github.io/Max-Count-Game-Using-React/">
+                    <img src="./asset/maxcount.png" class="h-[30vh] rounded-xl">
+                </a>
+                <h3 class="flex justify-center font-medium text-xl">Max Count Game</h3>
+                <p class="p-2">
+                    In this Game it counts the number of times a button pressed in a give particular period of time.
+                    This Max Count Game is designed .
+                </p>
+            </div>
+
+            <div class="m-5">
+                <a href="https://sarath-cmd.github.io/Clock-Stopwatch/">
+                    <img src="./asset/Clock.png" class="h-[30vh] rounded-xl">
+                </a>
+                <h3 class="flex justify-center font-medium text-xl">Clock</h3>
+                <p class="p-2">
+                    A digital clock, designed in a sophisticated dark & light theme mode.
+                    Showcasing the current time with precision build using HTML, TailwindCSS, and JavaScript for frontend experience.
+                </p>
+            </div>
+            
+            <div class="m-5">
+                <a href="">
+                    <img src="./asset/Htmllogin.png" class="h-[30vh] rounded-xl">
+                </a>
+                <h3 class="flex justify-center font-medium text-xl">Login & Reg</h3>
+                <p class="p-2">
+                    This is a login page, crafted with a dark and light theme modes. 
+                    Utilizing HTML, TailwindCSS, and JavaScript for an exclusive frontend experience. 
+                </p>
+            </div>
+            
+            <div class="m-5">
+                <a href="https://sarath-cmd.github.io/Portfolio-Dark-Theme/">
+                    <img src="./asset/portfolio-darktheme.png" class="h-[30vh] rounded-xl">
+                </a>
+                <h3 class="flex justify-center font-medium text-xl">Portfolio Dark theme</h3>
+                <p class="p-2">
+                    This is my portfolio, exclusively designed in dark theme mode. 
+                    It contains comprehensive information and is entirely built using HTML and CSS. 
+                </p>
+            </div>
+
+            <div class="m-5">
+                <a href="https://sarath-cmd.github.io/NovaPad/">
+                    <img src="./asset/NovaPad.png" class="h-[30vh] rounded-xl">
+                </a>
+                <h3 class="flex justify-center font-medium text-xl">Nova Pad Landing Page</h3>
+                <p class="p-2">
+                    The NovaPad is more specific than the EvolveX webpage, focusing on a particular model. 
+                    It is built around an imaginary brand. Navigating through it mainly emphasizes a specific model 
+                    within that brand.
+                </p>
+            </div>
+
+            <div class="m-5">
+                <a href="https://sarath-cmd.github.io/evolvex-webpage/">
+                    <img src="./asset/Evolve-X.png" class="h-[30vh] rounded-xl">
+                </a>
+                <h3 class="flex justify-center font-medium text-xl">EvolveX Web Page</h3>
+                <p class="p-2">
+                    This EvolveX webpage serves as a functional model for various brands. 
+                    I built this page using an imaginary car brand. 
+                    Users can navigate across multiple pages and access details seamlessly.
+                </p>
+            </div>
+        </div>
+    </section>
+    
     <section class="bg-purple-300 p-5 mt-10 rounded-2xl" id="edu">
         <div class="flex justify-center font-bold text-4xl">
             My Education
         </div>
 
         <div class="grid sm:grid sm:grid-cols-2 xl:grid-cols-3">
-            <div class="group mt-5 ml-7 ">
+            <div class="group mt-5 md:ml-7">
                     <h1 class="font-bold text-2xl">Rathinam Technical Campus</h1>
-                <div class="group-hover:bg-purple-400 p-5 rounded-2xl group-hover:shadow-md group-hover:shadow-black">
+                <div class="group-hover:bg-purple-400 p-2 md:p-5 rounded-2xl group-hover:shadow-md group-hover:shadow-black">
                     <img src="./asset/rathinam.jpg" class="w-full h-[338px] rounded-xl opacity-50 group-hover:opacity-100"><br>
                     <Span class="opacity-30 group-hover:opacity-100">
                         <b class="opacity-80">COLLEGE:</b> RATHINAM TECHNICAL CAMPUS<br>
@@ -183,7 +276,7 @@
                         <b class="opacity-70">DEGREE:</b> B.E<br>
                         <b class="opacity-70">DEPARTMENT:</b> COMPUTER SCIENCE AND ENGINEERING<br>
                         <b class="opacity-70">YEARS:</b> 4 YEARS<br>
-                        <b class="opacity-70">GPA:</b> 7.6<br>
+                        <b class="opacity-70">GPA:</b> 7.4<br>
                         <b class="opacity-70">JOINING YEAR:</b> 2020<br>
                         <b class="opacity-70">PASSOUT YEAR:</b> 2024<br>
                         <button onclick="location.href='https://www.rathinamcollege.edu.in/engineering/'" class="flex font-bold mt-5 p-3 rounded-lg bg-red-600 text-white">
@@ -193,9 +286,9 @@
                 </div>
             </div>
 
-            <div class="group mt-5 ml-7 ">
+            <div class="group mt-5 md:ml-7 ">
                     <h1 class="font-bold text-2xl">SRINIVASA VIDHYALAYA</h1>
-                <div class="group-hover:bg-purple-400 p-5 rounded-2xl group-hover:shadow-md group-hover:shadow-black">
+                <div class="group-hover:bg-purple-400 p-2 md:p-5 rounded-2xl group-hover:shadow-md group-hover:shadow-black">
                     <img src="./asset/srinivasa logo.jpeg" class="w-full h-[338px] rounded-xl opacity-50 group-hover:opacity-100"><br>
                     <Span class="opacity-30 group-hover:opacity-100">
                         <b class="opacity-80">SCHOOL:</b> SRINIVASA VIDHYALAYA<br>
@@ -214,9 +307,9 @@
                 </div>
             </div>
 
-            <div class="group mt-5 ml-7 ">
-                <h1 class="font-bold text-2xl">SRINIVASA VIDHYALAYA</h1>
-                <div class="group-hover:bg-purple-400 p-5 rounded-2xl group-hover:shadow-md group-hover:shadow-black">
+            <div class="group mt-5 md:ml-7 ">
+                <h1 class="font-bold text-2xl">AMRITA VIDYALAYAM</h1>
+                <div class="group-hover:bg-purple-400 p-2 md:p-5 rounded-2xl group-hover:shadow-md group-hover:shadow-black">
                     <img src="./asset/amrita logo.jpg" class="w-full h-[338px] rounded-xl opacity-50 group-hover:opacity-100"><br>
                     <Span class="opacity-30 group-hover:opacity-100">
                         <b class="opacity-80">SCHOOL:</b> Amrita Vidyalayam<br>
@@ -233,48 +326,6 @@
                         </button>
                     </Span>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-purple-300 p-5 mt-10 rounded-2xl" id="pro">
-        <h1 class="flex justify-center font-bold text-4xl">MY PROJECTS</h1>
-        <h2 class="flex justify-center font-semibold text-xl">Click On The Image To View The Web Page</h2>
-        <div class="grid sm:grid sm:grid-cols-2 xl:grid-cols-3">
-            <div class="m-5">
-                <a href="https://sarath-cmd.github.io/evolvex-webpage/">
-                    <img src="./asset/Evolve-X.png" class="w-full rounded-xl">
-                </a>
-                <h3 class="flex justify-center font-medium text-xl">EvolveX Web Page</h3>
-                <p class="p-2">
-                    This EvolveX webpage serves as a functional model for various brands. 
-                    I built this page using an imaginary car brand as a template. 
-                    Users can navigate across multiple pages and access details seamlessly.
-                </p>
-            </div>
-
-            <div class="m-5">
-                <a href="https://sarath-cmd.github.io/NovaPad/">
-                    <img src="./asset/NovaPad.png" calss="h-[1000px] rounded-xl">
-                </a>
-                <h3 class="flex justify-center font-medium text-xl">Nova Pad Landing Page</h3>
-                <p class="p-2">
-                    The NovaPad is more specific than the EvolveX webpage, focusing on a particular model. 
-                    It is built around an imaginary brand. Navigating through it mainly emphasizes a specific model 
-                    within that brand.
-                </p>
-            </div>
-
-            <div class="m-5">
-                <a href="https://sarath-cmd.github.io/Portfolio-Dark-Theme/">
-                    <img src="./asset/portfolio-darktheme.png" calss="h-[1000px] rounded-xl">
-                </a>
-                <h3 class="flex justify-center font-medium text-xl">Portfolio Dark theme</h3>
-                <p class="p-2">
-                    This is my portfolio, exclusively designed in dark theme mode. 
-                    It contains comprehensive information and is entirely built using HTML and CSS. 
-                    The portfolio is hosted on GitHub.
-                </p>
             </div>
         </div>
     </section>
